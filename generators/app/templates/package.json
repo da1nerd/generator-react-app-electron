@@ -1,0 +1,44 @@
+{
+  "name": "react-app-electron-template",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "homepage": "./",
+  "dependencies": {
+    "@craco/craco": "^3.5.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "start": "concurrently 'yarn react-start' 'wait-on http://localhost:3000/ && cross-env NODE_ENV=development yarn electron-start'",
+    "build": "yarn react-build && cp package.json build/ && yarn electron-build",
+    "electron-start": "electron .",
+    "electron-build": "electron-packager ./build --out=dist",
+    "react-start": "craco start",
+    "react-build": "craco build",
+    "test": "craco test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@storybook/react": "^5.0.1",
+    "babel-loader": "^8.0.5",
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "electron": "^4.0.7",
+    "electron-packager": "^13.1.1",
+    "source-map-explorer": "^1.7.0",
+    "wait-on": "^3.2.0"
+  }
+}

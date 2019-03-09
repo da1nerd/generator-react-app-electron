@@ -1,6 +1,6 @@
 {
   "name": "generator-react-app-electron",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A \"Create React App\" project configured for electron.",
   "homepage": "https://github.com/neutrinog/react-app-electron-template",
   "author": {
@@ -38,8 +38,11 @@
     "npm": ">= 4.0.0"
   },
   "dependencies": {
-    "yeoman-generator": "^2.0.1",
     "chalk": "^2.1.0",
+    "fs-extra": "^7.0.1",
+    "inquirer-npm-name": "^3.0.0",
+    "mkdirp": "^0.5.1",
+    "yeoman-generator": "^2.0.1",
     "yosay": "^2.0.1"
   },
   "jest": {
