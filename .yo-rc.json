@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Joel Lonbeck",
+      "authorEmail": "joel@neutrinographics.com",
+      "authorUrl": "http://neutrinographics.com"
+    }
+  }
+}
