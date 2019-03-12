@@ -7,7 +7,7 @@ describe("generator-react-app-electron:app", () => {
   beforeAll(() => {
     return helpers
       .run(path.join(__dirname, "../generators/app"))
-      .withPrompts({ someAnswer: true });
+      .withPrompts({ name: "my-sample-project" });
   });
 
   it("creates files", () => {
@@ -25,6 +25,9 @@ describe("generator-react-app-electron:app", () => {
       "README.md",
       "yarn.lock"
     ]);
-    // TODO: Check that project name is correct
+    assert.fileContent("README.md", /my-sample-project/);
+    assert.fileContent("package.json", /my-sample-project/);
+    assert.fileContent("public/index.html", /My Sample Project/);
+    assert.fileContent("public/manifest.json", /My Sample Project/);
   });
 });

@@ -1,3 +1,6 @@
+# <%- projectName -%>
+
+
 This electron project template is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Electron Configuration
