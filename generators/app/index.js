@@ -46,17 +46,21 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    // Copy over everything
-    fs.copySync(this.templatePath(""), this.destinationPath(""));
-
-    // Inject project name
-    const paths = [
+    const templatedFiles = [
       "README.md",
       "package.json",
       "public/index.html",
       "public/manifest.json"
     ];
-    for (const p of paths) {
+    const templatedPaths = templatedFiles.map(file => this.templatePath(file));
+
+    // Copy over everything
+    fs.copySync(this.templatePath(""), this.destinationPath(""), {
+      filter: file => templatedPaths.indexOf(file) === -1
+    });
+
+    // Inject project name
+    for (const p of templatedFiles) {
       this.fs.copyTpl(this.templatePath(p), this.destinationPath(p), {
         projectHumanName: this.props.humanName,
         projectName: this.props.name
