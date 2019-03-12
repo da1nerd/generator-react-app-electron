@@ -43,10 +43,7 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    fs.copySync(
-      this.templatePath(""),
-      this.destinationPath("")
-    );
+    fs.copySync(this.templatePath(""), this.destinationPath(""));
   }
 
   install() {
