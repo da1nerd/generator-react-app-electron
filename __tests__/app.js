@@ -22,8 +22,7 @@ describe("generator-react-app-electron:app", () => {
       "craco.config.js",
       "main.js",
       "package.json",
-      "README.md",
-      "yarn.lock"
+      "README.md"
     ]);
     assert.fileContent("README.md", /my-sample-project/);
     assert.fileContent("package.json", /my-sample-project/);
