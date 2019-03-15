@@ -95,6 +95,24 @@ function createWindow(windowId, options = {}) {
 
   if (IS_DEVELOPMENT) {
     window.loadURL('http://localhost:3000');
+
+    // Add developer extensions
+    try {
+      const {
+        default: installExtension,
+        REACT_DEVELOPER_TOOLS,
+        REDUX_DEVTOOLS
+      } = require('electron-devtools-installer');
+
+      installExtension(REACT_DEVELOPER_TOOLS).catch(e => {
+        console.error('Could not install React developer tools', e);
+      });
+      installExtension(REDUX_DEVTOOLS).catch(e => {
+        console.error('Could not install Redux developer tools', e);
+      });
+    } catch (e) {
+      console.error('Could not developer extensions', e);
+    }
   } else {
     window.loadURL(`file://${path.join(__dirname, '/index.html')}`);
   }

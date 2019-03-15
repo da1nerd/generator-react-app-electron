@@ -45,6 +45,18 @@ All intercepted logs are passed to electron's main thread where they are recorde
 Just continue logging to the console like always and they will be automatically saved for later reference.
 In order to keep things tidy the log file is truncated after it grows larger than 1mb.
 
+### Developer Extensions
+
+When ran in development mode (`NODE_ENV=development`) several extensions are installed
+to improve your development experience.
+
+> NOTE: since these are imported from inside the `public/` folder, webpack will not suck in these dependencies
+> when generating a production build.
+
+* [React Developer Tools](https://github.com/facebook/react-devtools)
+* [Redux DevTools](https://extension.remotedev.io/)
+
+
 ### Component prototyping with [Storybook](https://storybook.js.org/)
 
 Prototyping components in an isolated environment is critical to well designed components. Not only does it save the headache of navigating all over the app just to see your updated component, but it also forces you to develop loosly coupled components.
