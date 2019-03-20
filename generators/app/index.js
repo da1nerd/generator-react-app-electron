@@ -29,8 +29,9 @@ module.exports = class extends Generator {
       this
     ).then(props => {
       this.props.name = props.name;
-      this.props.humanName = props.name.replace(/-/g, " ").
-        replace(/(\b.)/g, m => `${m[0].toUpperCase()}`);
+      this.props.humanName = props.name
+        .replace(/-/g, " ")
+        .replace(/(\b.)/g, m => `${m[0].toUpperCase()}`);
     });
   }
 

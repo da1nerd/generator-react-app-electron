@@ -24,9 +24,5 @@ describe("generator-react-app-electron:app", () => {
       "package.json",
       "README.md"
     ]);
-    assert.fileContent("README.md", /my-sample-project/);
-    assert.fileContent("package.json", /my-sample-project/);
-    assert.fileContent("public/index.html", /My Sample Project/);
-    assert.fileContent("public/manifest.json", /My Sample Project/);
   });
 });
