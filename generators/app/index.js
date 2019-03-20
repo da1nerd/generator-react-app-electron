@@ -29,9 +29,8 @@ module.exports = class extends Generator {
       this
     ).then(props => {
       this.props.name = props.name;
-      this.props.humanName = props.name
-        .replace(/-/g, " ")
-        .replace(/(\b.)/g, m => `${m[0].toUpperCase()}`);
+      this.props.humanName = props.name.replace(/-/g, " ").
+        replace(/(\b.)/g, m => `${m[0].toUpperCase()}`);
     });
   }
 
@@ -46,26 +45,13 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    const templatedFiles = [
-      "README.md",
-      "package.json",
-      "public/index.html",
-      "public/manifest.json"
-    ];
-    const templatedPaths = templatedFiles.map(file => this.templatePath(file));
-
-    // Copy over everything
-    fs.copySync(this.templatePath(""), this.destinationPath(""), {
-      filter: file => templatedPaths.indexOf(file) === -1
-    });
-
-    // Inject project name
-    for (const p of templatedFiles) {
-      this.fs.copyTpl(this.templatePath(p), this.destinationPath(p), {
-        projectHumanName: this.props.humanName,
-        projectName: this.props.name
-      });
-    }
+    fs.copySync(
+      this.templatePath("react-app-electron-template"),
+      this.destinationPath(""),
+      {
+        filter: file => path.basename(file) !== ".git"
+      }
+    );
   }
 
   install() {

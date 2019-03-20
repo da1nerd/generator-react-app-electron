@@ -1,0 +1,3 @@
+[submodule "generators/app/templates/react-app-electron-template"]
+	path = generators/app/templates/react-app-electron-template
+	url = https://github.com/neutrinog/react-app-electron-template.git
