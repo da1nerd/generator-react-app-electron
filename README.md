@@ -1,7 +1,7 @@
 # generator-react-app-electron [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > A &#34;Create React App&#34; project configured for electron.
 
-This generator produces a non-ejected [create-react-app](https://github.com/facebook/create-react-app) project that is configured to run out-of-the-box with [electron](https://electronjs.org/), [redux](https://redux.js.org/), and a few other [handy features](https://github.com/neutrinog/generator-react-app-electron/blob/master/generators/app/templates/README.md#features).
+This generator produces a non-ejected [create-react-app](https://github.com/facebook/create-react-app) project that is configured to run out-of-the-box with [electron](https://electronjs.org/) and a few other handy features. The template used is at https://github.com/neutrinog/react-app-electron-template.
 
 ## Installation
 
