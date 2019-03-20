@@ -49,7 +49,8 @@
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
       "/generators/"
-    ]
+    ],
+    "collectCoverage": true
   },
   "lint-staged": {
     "*.js": [
