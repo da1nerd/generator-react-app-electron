@@ -11,11 +11,19 @@ function makeProjectName(name) {
 }
 
 module.exports = class extends Generator {
+  constructor(args, opts) {
+    super(args, opts);
+    this.argument("name", { type: String, required: false });
+  }
+
   initializing() {
     this.props = {};
   }
 
-  prompting() {
+  _getName() {
+    if (this.options.name) {
+      return Promise.resolve({ name: this.options.name });
+    }
     return askName(
       {
         name: "name",
@@ -27,7 +35,11 @@ module.exports = class extends Generator {
         }
       },
       this
-    ).then(props => {
+    );
+  }
+
+  prompting() {
+    return this._getName().then(props => {
       this.props.name = props.name;
       this.props.humanName = props.name
         .replace(/-/g, " ")
