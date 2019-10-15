@@ -24,6 +24,7 @@ module.exports = class extends Generator {
     if (this.options.name) {
       return Promise.resolve({ name: this.options.name });
     }
+
     return askName(
       {
         name: "name",
