@@ -13,7 +13,8 @@ describe("generator-react-app-electron:app", () => {
   it("creates files", () => {
     assert.file([
       ".storybook/config.js",
-      "public/main.js",
+      "electron/index.js",
+      "public/index.html",
       "src/App.js",
       "stories/index.js",
       ".env",
@@ -37,7 +38,8 @@ describe("generator-react-app-electron:app with args", () => {
   it("creates files", () => {
     assert.file([
       ".storybook/config.js",
-      "public/main.js",
+      "electron/index.js",
+      "public/index.html",
       "src/App.js",
       "stories/index.js",
       ".env",

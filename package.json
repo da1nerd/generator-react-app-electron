@@ -1,6 +1,6 @@
 {
   "name": "generator-react-app-electron",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A \"Create React App\" project configured for electron.",
   "homepage": "https://github.com/neutrinog/react-app-electron-template",
   "author": {
