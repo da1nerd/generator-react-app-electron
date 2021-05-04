@@ -1,4 +1,4 @@
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 # generator-react-app-electron
 > A "Create React App" project configured for electron.
 
@@ -35,7 +35,5 @@ MIT © [Joel Lonbeck](http://neutrinographics.com)
 [npm-url]: https://npmjs.org/package/generator-react-app-electron
 [travis-image]: https://travis-ci.org/da1nerd/generator-react-app-electron.svg?branch=master
 [travis-url]: https://travis-ci.org/da1nerd/generator-react-app-electron
-[daviddm-image]: https://david-dm.org/da1nerd/generator-react-app-electron.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/da1nerd/generator-react-app-electron
 [coveralls-image]: https://coveralls.io/repos/da1nerd/generator-react-app-electron/badge.svg
 [coveralls-url]: https://coveralls.io/r/da1nerd/generator-react-app-electron
