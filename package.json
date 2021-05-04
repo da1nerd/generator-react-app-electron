@@ -1,11 +1,11 @@
 {
   "name": "generator-react-app-electron",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A \"Create React App\" project configured for electron.",
-  "homepage": "https://github.com/neutrinog/react-app-electron-template",
+  "homepage": "https://github.com/da1nerd/react-app-electron-template",
   "author": {
-    "name": "Joel Lonbeck",
-    "email": "joel@neutrinographics.com",
+    "name": "Joel",
+    "email": "da1nerd@pm.me",
     "url": "http://neutrinographics.com"
   },
   "files": [
@@ -82,6 +82,6 @@
     "pretest": "eslint .",
     "test": "jest"
   },
-  "repository": "neutrinog/generator-react-app-electron",
+  "repository": "da1nerd/generator-react-app-electron",
   "license": "MIT"
 }

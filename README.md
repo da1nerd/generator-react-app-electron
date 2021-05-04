@@ -1,7 +1,7 @@
 # generator-react-app-electron [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > A &#34;Create React App&#34; project configured for electron.
 
-This generator produces a non-ejected [create-react-app](https://github.com/facebook/create-react-app) project that is configured to run out-of-the-box with [electron](https://electronjs.org/) and a few other handy features. The template used is at https://github.com/neutrinog/react-app-electron-template.
+This generator produces a non-ejected [create-react-app](https://github.com/facebook/create-react-app) project that is configured to run out-of-the-box with [electron](https://electronjs.org/) and a few other handy features. The template used is at https://github.com/da1nerd/react-app-electron-template.
 
 ## Installation
 
@@ -32,9 +32,9 @@ MIT © [Joel Lonbeck](http://neutrinographics.com)
 
 [npm-image]: https://badge.fury.io/js/generator-react-app-electron.svg
 [npm-url]: https://npmjs.org/package/generator-react-app-electron
-[travis-image]: https://travis-ci.org/neutrinog/generator-react-app-electron.svg?branch=master
-[travis-url]: https://travis-ci.org/neutrinog/generator-react-app-electron
-[daviddm-image]: https://david-dm.org/neutrinog/generator-react-app-electron.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/neutrinog/generator-react-app-electron
-[coveralls-image]: https://coveralls.io/repos/neutrinog/generator-react-app-electron/badge.svg
-[coveralls-url]: https://coveralls.io/r/neutrinog/generator-react-app-electron
+[travis-image]: https://travis-ci.org/da1nerd/generator-react-app-electron.svg?branch=master
+[travis-url]: https://travis-ci.org/da1nerd/generator-react-app-electron
+[daviddm-image]: https://david-dm.org/da1nerd/generator-react-app-electron.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/da1nerd/generator-react-app-electron
+[coveralls-image]: https://coveralls.io/repos/da1nerd/generator-react-app-electron/badge.svg
+[coveralls-url]: https://coveralls.io/r/da1nerd/generator-react-app-electron
